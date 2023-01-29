@@ -1,0 +1,65 @@
+.hero-s {
+
+    background-image: url("../../images/back-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 841.82px;
+    padding-top: 125px;
+
+    .hero {
+
+        &__title {
+            @include text(700, 72px, 83px, #fff);
+            max-width: 759px;
+            margin-bottom: 40px;
+        }
+
+        &__form {
+            @include flex(row, center, space-between);
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 16px;
+            padding: 8px 16px;
+
+            &--input {
+                // @include text(400, 16px, 18px, #fff);
+                color: #fff;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+
+            &--btn {
+                @include text(700, 16px, 18px, #2659C3);
+                padding: 12px 46.5px;
+                background: #fff;
+                border-radius: 32px;
+                border: none;
+            }
+        }
+
+        &__category {
+
+            &--title {
+                @include text(700, 32px, 37px, #fff);
+                margin-top: 40px;
+                margin-bottom: 32px;
+            }
+        }
+
+        &__ul {
+            @include flex(row, center, space-between);
+            list-style-type: none;
+        }
+
+        &__list {
+            @include flex(column, center, center);
+
+            &--text {
+                @include text(400, 16px, 18px, #fff);
+                opacity: 0.4;
+                margin-top: 16px;
+            }
+        }
+    }
+}

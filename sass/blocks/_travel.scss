@@ -1,0 +1,18 @@
+.travel {
+    margin-top: 72px;
+    background-image: url("../../images/travel-map.jpg");
+    border-radius: 16px;
+
+    &__title {
+        @include text(700, 56px, 64px, #fff);
+        max-width: 678.8px;
+        padding-left: 81px;
+        padding-top: 80px;
+    }
+
+    &__text {
+        @include text(400, 32px, 41px, #fff);
+        margin-top: 24px;
+        padding: 0 210px 122px 81px;
+    }
+}

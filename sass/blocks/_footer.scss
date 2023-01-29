@@ -1,0 +1,54 @@
+.footer-s {
+    background-color: #141414;
+    .footer {
+        @include flex(row, flex-start, space-between);
+        padding-top: 42px;
+        padding-bottom: 42px;
+
+
+        &__logo {
+            @include text(700, 32px, 37px, #fff);
+        }
+
+        &__ul{
+            @include flex(column, flex-start, flex-start);
+            gap: 15px;
+
+            &--li{
+                list-style-type: none;
+
+                &-link{
+                    text-decoration: none;
+                    @include text(400, 13px, 17px, #808080);
+                }
+
+                .link-b{
+                    border: 1px solid #808080;
+                    padding: 10px;
+                }
+
+                .fa-facebook{
+                    position: relative;
+                    top: 47px;
+                }
+
+                .fa-instagram{
+                    margin-left: 20px;
+                    position: relative;
+                    top: 47px;
+                }
+                .fa-twitter{
+                    position: relative;
+                    top: 47px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+                .fa-youtube{
+                    position: relative;
+                    top: 47px;
+                }
+            }
+        }
+    }
+}
